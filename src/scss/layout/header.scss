@@ -1,0 +1,26 @@
+.header {
+    padding: 20px 0;
+    
+    &__container {
+        max-width: 1440px;
+        margin:auto;
+        display: flex; // lub inny sposób wyświetlania w zależności od designu
+        justify-content: space-between; // Przykładowe wyrównanie
+        align-items: center; // Wyrównanie elementów w pionie
+    }
+    &__logo {
+        max-width: 100px;
+    }
+
+    &__menu {
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            padding-inline-start: 0px;
+        }
+    }
+}

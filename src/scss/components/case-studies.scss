@@ -1,0 +1,79 @@
+.case-studies {
+    padding: 30px 0;
+
+    &__filters{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 100%;
+        margin: auto;
+        margin-bottom: 50px;
+
+
+        @media (min-width: 768px){
+            max-width: 95%;
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        
+        & > a{
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+
+    &__filter{
+        cursor: pointer;
+        padding: 5px 15px;
+        color: $primary-text-color;
+        transition: all 0.3s;
+
+        &:hover{
+            background-color: $butons-background-color-hover;
+        }
+
+        &--active{
+            background-color: $butons-background-color-hover;
+        }
+    }
+
+    &__group{
+
+        display: block;
+
+        @media (min-width: 768px){
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-right: 30px;
+        }
+
+    }
+
+    &__item{
+        width: 100%;
+        margin-bottom: 100px;
+
+        @media (min-width: 768px){
+            width: 50%;
+            margin-bottom: 50px;
+        }
+
+        &>img {
+            width: 100%;
+        }
+    }
+
+    &__info{
+        padding: 30px 50px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $primary-text-color;
+        font-weight: bold;
+        border-bottom: solid 4px $butons-background-color-hover;
+    }
+}

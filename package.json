@@ -1,0 +1,23 @@
+{
+  "name": "case-studies-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/scss/main.scss dist/style.min.css --no-source-map --style=compressed",
+    "js": "terser src/js/main.js -o dist/main.min.js --compress --mangle",
+    "build:css": "sass src/scss/main.scss dist/style.min.css --style compressed",
+    "watch:css": "sass --watch src/scss/main.scss:dist/style.min.css --style compressed",
+    "build:js": "terser src/js/main.js -o dist/main.min.js --compress --mangle",
+    "watch:js": "watch 'npm run build:js' src/js/main.js",
+    "build": "npm run build:css && npm run build:js",
+    "watch": "npm run watch:css & npm run watch:js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.79.5",
+    "terser": "^5.34.1"
+  }
+}

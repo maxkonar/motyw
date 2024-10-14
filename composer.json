@@ -1,0 +1,16 @@
+{
+    "name": "vendor/case-studies-theme",
+    "description": "Case studies theme",
+    "authors": [
+        {
+            "name": "Kamil Karasiewicz",
+            "email": "kamil_karasiewicz@op.pl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}
